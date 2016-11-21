@@ -27,15 +27,61 @@ var 变量名字 类型 = 表达式
 
 
 
+数据类型
+========================
+
+- **字符串**
+
+字符串的值，是不可更改的
+字符串的，长度是内置函数，指字节数目，不是字符数目
+字符串的，索引为字节索引
+字符串，可以通过 str[tartIndex : endIndex]创建一个
+字串，startIndex, endIndex可以忽略，则为(0, len(str))
+字符串比较，是同过比较字节数目来进行
+
+使用反引号，可以使字符串变为原生字符串，没有转义发生
+
+
+
+- 数组
+
+数组类型定义， var variableName = [constentLen]type {initial value | 
+                                                                  | //emtpy values
+                                                   index: value}    //index to specialed values otehrs empty
+              var variableName1 = [...]type (below)
+
+          
 
 
 
 
 
 
+- ***slice 切片***
+
+切片可以看作是数组部分的一个
 
 
 
+
+方法
+=======================
+
+- ***方法的申明***
+
+func (f reciever) funcName (arglist ..) (retlist ..) {}
+
+reciever : 接收器，如this, self
+funcName : 选择器，如成员函数的名称
+
+可以为内置类型，增加一些方法（指针除外）
+
+如，为切片类型增加一些方法
+type path []int
+func (p path) distance(x, y int) ret int {}
+
+
+- ***指针对象的方法***
 
 
 
